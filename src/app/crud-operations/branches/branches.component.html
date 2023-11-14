@@ -1,0 +1,29 @@
+<h1>Branches</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Branch Name</th>
+        <th scope="col">Branch Address</th>
+        <th scope="col">TelNumberOne</th>
+        <th scope="col">TelNumberTwo</th>
+        <th scope="col">phoneNumberOne</th>
+        <th scope="col">phoneNumberTwo</th>
+        <th scope="col">Fax Number</th>
+        <th scope="col">Manager Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let branch of branches">
+       <td>{{branch.id}}</td>
+       <td>{{branch.name}}</td>
+       <td>{{branch.governate}}</td>
+       <td>{{branch.phoneNumberOne}}</td>
+       <td>{{branch.phoneNumberTwo}}</td>
+       <td>{{branch.mobileNumberOne}}</td>
+       <td>{{branch.mobileNumberTwo}}</td>
+       <td>{{branch.fax}}</td>
+       <td>{{branch.manager}}</td>
+      </tr>
+    </tbody>
+  </table>

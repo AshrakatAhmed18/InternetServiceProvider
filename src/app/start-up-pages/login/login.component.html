@@ -1,0 +1,61 @@
+<div class="w-75 mx-auto p-5 border border-5 border-dark-subtle mt-5 rounded">
+  <p class="mx-auto lead fs-1 text-center login-tittle">Login</p>
+  <hr class="w-25 mx-auto bg-info" />
+
+  <!--Form Elements-->
+  <div class="w-50 mx-auto mt-5">
+    <div class="input-group flex-nowrap">
+      <input
+        type="text"
+        class="form-control border border-3"
+        placeholder="Username"
+        aria-label="Username"
+        aria-describedby="addon-wrapping"
+        [(ngModel)]="userName"
+      />
+    </div>
+
+    <span
+     class="alert-user"
+     *ngIf="userNameIsEmpty"
+    >
+      Please Enter UserName
+    </span>
+
+    <div class="input-group flex-nowrap">
+      <input
+        type="password"
+        class="form-control border border-3 mt-3"
+        placeholder="Password"
+        aria-label="Username"
+        aria-describedby="addon-wrapping"
+        [(ngModel)]="password"
+
+      />
+    </div>
+    <span
+     class="alert-user"
+     *ngIf="userPasswordIsEmpty"
+    >
+      Please Enter password
+    </span>
+    <a routerLink="/dashboard">
+    <button
+      type="button"
+      class="btn btn-success mt-3 w-100 fs-1"
+      (click)="Login()"
+    >
+      Login
+    </button>
+  </a>
+  </div>
+
+  <div>
+    <div
+      class="alert alert-danger w-75 text-center lead rounded fs-2 mx-auto mt-5"
+      *ngIf="userNotFound"
+    >
+      you entered incorrect email or password
+    </div>
+  </div>
+</div>

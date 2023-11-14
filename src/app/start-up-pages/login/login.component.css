@@ -1,0 +1,13 @@
+.login-tittle{
+	font-style: normal;
+	color: #068DA9;
+}
+
+input{
+	height: 60px;
+	font-size: large;
+}
+
+.alert-user {
+	color: red;
+}

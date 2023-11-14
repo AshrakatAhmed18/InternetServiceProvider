@@ -1,0 +1,21 @@
+img {
+    width: 100px;
+    height: 40px;
+}
+
+.navbar {
+  background-color: #000000 !important;
+}
+
+a{
+    color: white;
+    font-size: large;
+}
+
+a:hover {
+    background-color: #FFB84C;
+}
+
+a:visited {
+    color : whitesmoke !important;
+}
